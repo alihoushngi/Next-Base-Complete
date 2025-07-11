@@ -26,6 +26,10 @@ export default function RootLayout({
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#317EFB" />
         <link rel="icon" href="/icons/icon-192x192.png" />
+        <meta
+          name="google-site-verification"
+          content="oergdeNDmECwZG5lddXue9LiU9jVenUYgAUrQre6v7Q"
+        />
       </head>
       <body>
         <RegisterSW />
