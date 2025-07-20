@@ -1,4 +1,3 @@
-// src/components/shared/LanguageSwitcher.tsx
 "use client";
 
 import Button from "@/components/shared/Button/Button";
@@ -9,6 +8,7 @@ export default function LanguageSwitcher() {
 
   const toggleLanguage = () => {
     const newLang = i18n.language === "fa" ? "en" : "fa";
+
     i18n.changeLanguage(newLang);
     if (typeof window !== "undefined") {
       document.documentElement.lang = newLang;
@@ -25,7 +25,7 @@ export default function LanguageSwitcher() {
   return (
     <Button
       onClick={toggleLanguage}
-      className="px-2 py-0 pt-1 text-xl"
+      className="px-2 py-0 pt-2 text-xl max-md:px-0 max-md:pl-3 leading-5 "
       aria-label="Change Language"
     >
       {isFa ? "🇬🇧" : "🇮🇷"}

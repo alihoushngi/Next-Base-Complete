@@ -18,8 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html
-      lang="fa"
-      dir="rtl"
+      lang="en"
+      dir="ltr"
       className={`${FiraFont.variable} ${VazirFont.variable} font-fa`}
     >
       <head>

@@ -18,41 +18,16 @@ export const ThemeSwitcher = () => {
   if (!mounted) return null;
 
   return (
-    <div
-      className={`flex items-center gap-2 text-sm font-medium ${
-        isFa ? "rtl" : "ltr"
-      }`}
-    >
-      <button
-        onClick={() => setTheme("light")}
-        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${
-          theme === "light"
-            ? "border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50"
-            : "hover:bg-white hover:text-black"
-        }`}
+    <div className={`text-sm font-medium ${isFa ? "rtl" : "ltr"}`}>
+      <select
+        value={theme}
+        onChange={(e) => setTheme(e.target.value)}
+        className="py-1 px-2 rounded-3xl w-fit transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800"
       >
-        ☀️ {t("light")}
-      </button>
-      <button
-        onClick={() => setTheme("dark")}
-        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${
-          theme === "dark"
-            ? "border-gray-500 bg-gray-800 border-2 hover:bg-black hover:text-white"
-            : "hover:border-blue-300 hover:bg-gray-50 border-2 border-transparent"
-        }`}
-      >
-        🌙 {t("dark")}
-      </button>
-      <button
-        onClick={() => setTheme("system")}
-        className={`pl-3 pr-5 py-1 rounded-3xl transition-all duration-300 ${
-          theme === "system"
-            ? "border-blue-800 text-white bg-blue-800 border-2"
-            : "hover:bg-blue-800 hover:text-white"
-        }`}
-      >
-        💻 {t("system")}
-      </button>
+        <option value="light">☀️ {t("light")}</option>
+        <option value="dark">🌙 {t("dark")}</option>
+        <option value="system">💻 {t("system")}</option>
+      </select>
     </div>
   );
 };

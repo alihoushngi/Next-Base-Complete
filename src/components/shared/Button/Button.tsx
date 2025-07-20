@@ -22,7 +22,7 @@ const Button = (props: IButtonProps) => {
   const [copied, setCopied] = useState(false);
 
   const baseClass =
-    "py-1 rounded-3xl w-fit transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800";
+    "py-1 rounded-3xl w-fit transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800 max-md:pr-3";
 
   const finalClass = clsx(baseClass, className);
 
@@ -35,7 +35,7 @@ const Button = (props: IButtonProps) => {
         try {
           await navigator.clipboard.writeText(textToCopy);
           setCopied(true);
-          setTimeout(() => setCopied(false), 2000); // بعد از ۲ ثانیه برمی‌گرده به FaCopy
+          setTimeout(() => setCopied(false), 2000);
         } catch (err) {
           console.error("Failed to copy!", err);
         }
@@ -51,7 +51,7 @@ const Button = (props: IButtonProps) => {
   const renderContent = () => {
     if (copy) {
       return (
-        <span className="flex items-center gap-2">
+        <span className="flex items-center gap-2 max-md:justify-between w-full">
           {children}
           {copied ? <TiTick className="text-green-500" /> : <FaCopy />}
         </span>

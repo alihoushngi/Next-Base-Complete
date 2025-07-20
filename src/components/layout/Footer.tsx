@@ -19,14 +19,16 @@ const Footer = () => {
           >
             {t("greeting")}
           </h4>
-          <p className={`font-light text-base ${isFa ? "text-justify" : ""}`}>
+          <p
+            className={`font-light text-base ${isFa ? "text-justify" : ""} max-md:text-xs`}
+          >
             {t("description")}
           </p>
           <div className="flex w-full justify-start items-start text-xl gap-2">
             <Button
               link
               href="mailto:aliihooshangi@gmail.com"
-              className="px-2"
+              className="px-2 max-md:px-0 max-md:pl-3"
               aria-label="Email"
             >
               <SiGmail />
@@ -34,7 +36,7 @@ const Footer = () => {
             <Button
               link
               href="https://www.linkedin.com/in/alihoushangi"
-              className="px-2"
+              className="px-2 max-md:px-0 max-md:pl-3"
               aria-label="LinkedIn"
             >
               <FaLinkedinIn />
@@ -42,7 +44,7 @@ const Footer = () => {
             <Button
               link
               href="https://github.com/alihoushngi"
-              className="px-2"
+              className="px-2 max-md:px-0 max-md:pl-3"
               aria-label="GitHub"
             >
               <TbBrandGithubFilled />
@@ -50,7 +52,7 @@ const Footer = () => {
           </div>
         </div>
         <div
-          className={`w-full px-6 py-12 rounded-xl dark:bg-gray-800 bg-slate-50 ${isFa ? "text-right" : "text-left"}`}
+          className={`w-full px-6 py-12 rounded-xl dark:bg-gray-800 bg-slate-50 ${isFa ? "text-right" : "text-left"} max-md:text-xs`}
         >
           <p>{t("cta")}</p>
           <q>{t("quote")}</q>
