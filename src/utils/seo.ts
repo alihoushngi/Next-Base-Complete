@@ -32,14 +32,14 @@ export const defaultMetadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "fa_IR",
-    url: "https://next-base-puce.vercel.app/",
+    url: "https://next-base-complete.vercel.app/",
     siteName: "Next Base",
     title: "Next Base",
     description:
       "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
     images: [
       {
-        url: "https://next-base-puce.vercel.app/images/og-image.jpg",
+        url: "https://next-base-complete.vercel.app/images/og-image.jpg",
         width: 1200,
         height: 630,
         alt: "Next Base - Boilerplate for Next.js projects",
@@ -52,7 +52,7 @@ export const defaultMetadata: Metadata = {
     description:
       "A powerful and developer-friendly boilerplate to jump start your Next.js projects with everything already configured — just clone and start building.",
     creator: "@nextbase",
-    images: ["https://next-base-puce.vercel.app/images/og-image.jpg"],
+    images: ["https://next-base-complete.vercel.app/images/og-image.jpg"],
   },
   icons: {
     icon: "/favicon.ico",

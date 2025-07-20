@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://nextbase.ir
+Host: https://next-base-complete.vercel.app
 
 # Sitemaps
-Sitemap: https://nextbase.ir/sitemap.xml
+Sitemap: https://next-base-complete.vercel.app/sitemap.xml
