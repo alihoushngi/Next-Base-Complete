@@ -11,13 +11,16 @@ const LandingPage = () => {
       className={`text-black dark:text-blue-50 py-7 flex max-md:px-5 flex-col gap-12 max-w-[950px] m-auto ${isFa ? "rtl text-right" : "ltr text-left"}`}
     >
       <div className="flex flex-col gap-1 justify-center items-center ">
-        <h2 className="font-light text-xl text-center max-md:text-base">
+        <span className="font-light text-xl text-center max-md:text-base">
           {t("tagline")}
-        </h2>
+        </span>
         <h1 className="font-black text-3xl text-center max-md:text-lg">
           {t("title")}
         </h1>
-        <p className="text-center max-md:text-sm">{t("description")}</p>
+        <p className="text-center max-md:text-sm max-w-[500px]">
+          {t("description") ||
+            "Pre-configured with TypeScript, Tailwind CSS, Redux, Axios, and more…"}
+        </p>
       </div>
       <div className="flex justify-center items-center gap-2 w-full max-md:flex-col">
         <Button
@@ -42,9 +45,9 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full flex flex-col gap-2 justify-start bg-white dark:bg-black p-4 rounded-ss-xl rounded-se-xl">
-          <h3 className="font-bold text-xl max-md:text-sm">
+          <h2 className="font-bold text-xl max-md:text-sm">
             {t("section_1_title")}
-          </h3>
+          </h2>
           <p className="font-light text-sm max-md:text-xs">
             {t("section_1_text")}
           </p>
@@ -88,9 +91,9 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full flex flex-col gap-1 justify-start">
-          <h3 className="font-bold text-xl max-md:text-sm">
+          <h4 className="font-bold text-xl max-md:text-sm">
             {t("section_3_title")}
-          </h3>
+          </h4>
           <p className="font-light text-sm max-md:text-xs">
             {t("section_3_text")}
           </p>
@@ -110,9 +113,9 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full flex flex-col gap-1 justify-start">
-          <h3 className="font-bold text-xl max-md:text-sm">
+          <h5 className="font-bold text-xl max-md:text-sm">
             {t("section_4_title")}
-          </h3>
+          </h5>
         </div>
         <div className="w-full ps-2 pt-2 max-md:text-xs">
           <ul>
@@ -127,9 +130,9 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full flex flex-col gap-2 justify-start bg-white dark:bg-black p-4 rounded-ss-xl rounded-se-xl">
-          <h3 className="font-bold text-xl max-md:text-sm">
+          <h5 className="font-bold text-xl max-md:text-sm">
             {t("section_5_title")}
-          </h3>
+          </h5>
         </div>
         <div className="w-full dark:bg-gray-800 bg-slate-50 rounded-es-xl rounded-ee-xl p-4 max-md:text-xs">
           <ul>
@@ -144,9 +147,9 @@ const LandingPage = () => {
 
       <div className="flex flex-col justify-center items-center w-full">
         <div className="w-full flex flex-col gap-1 justify-start">
-          <h3 className="font-bold text-xl max-md:text-sm">
+          <h6 className="font-bold text-xl max-md:text-sm">
             {t("section_6_title")}
-          </h3>
+          </h6>
         </div>
         <div className="w-full ps-2 pt-2 max-md:text-xs">
           <ul>

@@ -29,7 +29,7 @@ const Footer = () => {
               link
               href="mailto:aliihooshangi@gmail.com"
               className="px-2 max-md:px-0 max-md:pl-3"
-              aria-label="Email"
+              ariaLabel="Link for message Ali Hooshangi on email"
             >
               <SiGmail />
             </Button>
@@ -37,7 +37,7 @@ const Footer = () => {
               link
               href="https://www.linkedin.com/in/alihoushangi"
               className="px-2 max-md:px-0 max-md:pl-3"
-              aria-label="LinkedIn"
+              ariaLabel="Link for see Ali Hooshangi Linkedin"
             >
               <FaLinkedinIn />
             </Button>
@@ -45,7 +45,7 @@ const Footer = () => {
               link
               href="https://github.com/alihoushngi"
               className="px-2 max-md:px-0 max-md:pl-3"
-              aria-label="GitHub"
+              ariaLabel="Link for see Ali Hooshangi GitHub"
             >
               <TbBrandGithubFilled />
             </Button>

@@ -22,6 +22,7 @@ export const ThemeSwitcher = () => {
       <select
         value={theme}
         onChange={(e) => setTheme(e.target.value)}
+        aria-label="select theme with this button"
         className="py-1 px-2 rounded-3xl w-fit transition-all duration-300 border-blue-50 bg-white border-2 hover:border-blue-300 hover:bg-gray-50 dark:hover:bg-black dark:hover:text-white dark:border-gray-500 dark:bg-gray-800"
       >
         <option value="light">☀️ {t("light")}</option>
